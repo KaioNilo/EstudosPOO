@@ -2,13 +2,13 @@ public class Professor extends Pessoa {
     //Atributo
     private String centro;
 
-    //Métodos
-
     //Construtores
     public Professor(String cpf, String nome, int idade, String centro) {
         super(cpf, nome, idade);
         this.centro = centro;
     }
+
+    //Métodos
 
     //Getters && Setters
     public String getCentro() {
@@ -19,18 +19,14 @@ public class Professor extends Pessoa {
         this.centro = centro;
     }
 
-    //To String
-    @Override
-    public String toString() {
-        return "Professor{" +
-                "centro='" + centro + '\'' +
-                '}';
-    }
-
     //Dar Aula
     public void darAula() {
         System.out.println("Professor dando aula.");
     }
 
+    @Override
+    public void exibir() {
+        System.out.println("Nome Professor: " + nome + ", Centro: " + centro);
+    };
 
 }
