@@ -19,7 +19,16 @@ public abstract class Aluno extends Pessoa {
 
     @Override
     public void exibir() {
-        System.out.println("Nome Aluno: " + nome + ", Matrícula: " + matricula);
+        System.out.println("Nome Aluno: " + getNome() + ", Matrícula: " + matricula);
     };
 
+    //Get & Set
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
 }

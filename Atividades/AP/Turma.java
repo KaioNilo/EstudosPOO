@@ -28,15 +28,38 @@ public class Turma {
     }
 
     //Listar Alunos
-    public void listarAlunos() {
-        for (Aluno aluno: alunos) {
-            System.out.println(aluno.nome + " - Matrícula: " + aluno.matricula + ".");
-        }
-    }
-
-    public List<Aluno> exibir() {
+    public ArrayList<Aluno> getAlunos() {
         return alunos;
     }
 
 
+    //Get & Set
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    public void setAlunos(ArrayList<Aluno> alunos) {
+        this.alunos = alunos;
+    }
 }

@@ -8,7 +8,7 @@ public class Visitante extends Pessoa {
     //MÉTODOS
     @Override
     public void exibir() {
-        System.out.println("Nome Visitante: " + nome + ", CPF: " + cpf);
+        System.out.println("Nome Visitante: " + getNome() + ", CPF: " + getCpf());
     };
 
 }

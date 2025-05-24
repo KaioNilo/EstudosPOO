@@ -26,7 +26,7 @@ public class Professor extends Pessoa {
 
     @Override
     public void exibir() {
-        System.out.println("Nome Professor: " + nome + ", Centro: " + centro);
+        System.out.println("Nome Professor: " + getNome() + ", Centro: " + centro);
     };
 
 }
