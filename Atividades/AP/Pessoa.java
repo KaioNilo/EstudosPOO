@@ -29,12 +29,6 @@ public abstract class Pessoa {
 
     }
 
-    //Aniversário
-    public void fazerAniversario() {
-        this.idade+= 1;
-    }
-
-
     //Get & Set
     public String getCpf() {
         return cpf;
@@ -59,4 +53,10 @@ public abstract class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    //Aniversário
+    public void fazerAniversario() {
+        this.idade+= 1;
+    }
+
 }
